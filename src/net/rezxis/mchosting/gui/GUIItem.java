@@ -10,7 +10,7 @@ public abstract class GUIItem {
         this.item = item;
     }
 
-    ItemStack getBukkitItem() {
+    public ItemStack getBukkitItem() {
         return this.item;
     }
 
