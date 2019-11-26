@@ -85,6 +85,8 @@ public abstract class GUIWindow implements Listener {
 	}
 
 	private void load() {
+		this.inv.clear();
+		this.items.clear();
 		for (Entry<Integer,GUIItem> entry : getOptions().entrySet()) {
 			this.inv.setItem(entry.getKey(), entry.getValue().getBukkitItem());
 			this.items.put(entry.getKey(), entry.getValue());
