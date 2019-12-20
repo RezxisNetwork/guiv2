@@ -12,8 +12,12 @@
         <configuration>
           <source>1.8</source>
           <target>1.8</target>
+          <Encoding>UTF-8</Encoding>
         </configuration>
       </plugin>
     </plugins>
   </build>
+  <properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+  </properties>
 </project>

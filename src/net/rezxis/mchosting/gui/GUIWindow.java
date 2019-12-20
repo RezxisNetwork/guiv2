@@ -64,7 +64,11 @@ public abstract class GUIWindow implements Listener {
 						GUIAction act = item.invClick(e);
 						if (act == GUIAction.CLOSE) {
 							//HandlerList.unregisterAll(this);
-							e.getWhoClicked().closeInventory();
+							Bukkit.getScheduler().scheduleSyncDelayedTask(plugin, new Runnable() {
+								@Override
+								public void run() {
+									e.getWhoClicked().closeInventory();
+								}}, 1);
 						} else if (act == GUIAction.UPDATE) {
 							load();
 							((Player)e.getWhoClicked()).updateInventory();
