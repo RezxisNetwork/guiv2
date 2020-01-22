@@ -107,7 +107,7 @@ public abstract class GUIWindow implements Listener {
     }
     
     public void delayShow() {
-    	Bukkit.getScheduler().runTaskLaterAsynchronously(plugin, new Runnable() {
+    	Bukkit.getScheduler().scheduleSyncDelayedTask(plugin, new Runnable() {
     		public void run() {
     			show();
     		}
