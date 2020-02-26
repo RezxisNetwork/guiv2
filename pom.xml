@@ -22,10 +22,11 @@
   </properties>
   <dependencies>
   	<dependency>
-    	<artifactId>spigot</artifactId>
-    	<groupId>rezxis</groupId>
-    	<version>0</version>
-    	<scope>provided</scope>
+		<artifactId>spigot</artifactId>
+		<groupId>spigot</groupId>
+		<version>0</version>
+		<scope>system</scope>
+		<systemPath>${basedir}/libs/spigot.jar</systemPath>
 	</dependency>
   </dependencies>
 </project>
